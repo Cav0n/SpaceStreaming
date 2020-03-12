@@ -10,13 +10,17 @@
 
     <title>Space Streaming</title>
 </head>
-<body class="bg-dark">
+<body class="bg-dark text-light">
     <script src="{{asset('js/app.js')}}"></script>
 
     @include('components.header')
 
-    <main>
-        @yield('content')
+    <main class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-lg-7">
+                @yield('content')
+            </div>
+        </div>
     </main>
 
     <footer>
