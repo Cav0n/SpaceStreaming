@@ -1,32 +1,32 @@
-<div class="header-nightsky">
-    <nav class="navbar navbar-dark navbar-expand-lg">
-        <div class="container">
-            <a class="navbar-brand" href="#">Space Streaming</a>
-            <div class="navbar-header">
-                <button class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">ACCUEIL</a></li>
-                    <li><a href="#">TARIFS</a></li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">CATALOGUE <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Space Dandy</a>
-                            <a class="dropdown-item" href="#">Pulp Fiction</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Demander une oeuvre</a>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <div class="hero">
-        <h1>Votre site de streaming spatial</h1>
-        <p>Visionnez tous les épisodes de Space Dandy, gratuitement et en haute définition !</p>
-        <div class="btn btn-primary">C'est parti, baby !</div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Space Streaming</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Tarifs</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Catalogue
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Space Dandy</a>
+                <a class="dropdown-item" href="#">Pulp Fiction</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Demander l'ajout d'une autre oeuvre</a>
+                </div>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Chercher un titre" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Chercher</button>
+        </form>
     </div>
-</div>
+  </nav>
