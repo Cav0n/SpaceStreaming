@@ -3,45 +3,23 @@
 
 @section('content')
 <div class="container text-center my-5">
-    <h2 class="font-weight-bold">SPACE DANDY</h2>
 
+    @foreach (\App\Serie::all() as $serie)
+    <h2 class="font-weight-bold">{{ $serie->name }}</h2>
     <div class="row">
+        @foreach ($serie->seasons as $season)
         <div class="col-6">
-            <h4>Saison 1</h4>
+            <h4>Saison {{ $season->number }}</h4>
+
             <ul class="list-unstyled">
-                <li><a>Episode 1</a></li>
-                <li><a>Episode 2</a></li>
-                <li><a>Episode 3</a></li>
-                <li><a>Episode 4</a></li>
-                <li><a>Episode 5</a></li>
-                <li><a>Episode 6</a></li>
-                <li><a>Episode 7</a></li>
-                <li><a>Episode 8</a></li>
-                <li><a>Episode 9</a></li>
-                <li><a>Episode 10</a></li>
-                <li><a>Episode 11</a></li>
-                <li><a>Episode 12</a></li>
-                <li><a>Episode 13</a></li>
+                @foreach ($season->episodes as $episode)
+                <li><a>Episode {{ $episode->number }}</a></li>
+                @endforeach
             </ul>
         </div>
-        <div class="col-6">
-            <h4>Saison 2</h4>
-            <ul class="list-unstyled">
-                <li><a>Episode 1</a></li>
-                <li><a>Episode 2</a></li>
-                <li><a>Episode 3</a></li>
-                <li><a>Episode 4</a></li>
-                <li><a>Episode 5</a></li>
-                <li><a>Episode 6</a></li>
-                <li><a>Episode 7</a></li>
-                <li><a>Episode 8</a></li>
-                <li><a>Episode 9</a></li>
-                <li><a>Episode 10</a></li>
-                <li><a>Episode 11</a></li>
-                <li><a>Episode 12</a></li>
-                <li><a>Episode 13</a></li>
-            </ul>
-        </div>
+        @endforeach
     </div>
+    @endforeach
+
 </div>
 @endsection
