@@ -10,11 +10,18 @@
 
     <title>Space Streaming</title>
 </head>
-<body>
+<body class="bg-dark">
     <script src="{{asset('js/app.js')}}"></script>
 
-    <h1>BIENVENUE SUR SPACE STREAMING</h1>
+    @include('components.header')
 
-    @yield('content')
+    <main>
+        @yield('content')
+    </main>
+
+    <footer>
+
+    </footer>
+
 </body>
 </html>
