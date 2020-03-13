@@ -19,9 +19,14 @@ class CreateEpisodesTable extends Migration
             $table->string('name');
 
             $table->bigInteger('season_id')->unsigned();
+            $table->bigInteger('video_id')->unsigned();
 
             $table->foreign('season_id')
                     ->references('id')->on('seasons')
+                    ->onDelete('cascade');
+
+            $table->foreign('video_id')
+                    ->references('id')->on('videos')
                     ->onDelete('cascade');
 
             $table->timestamps();

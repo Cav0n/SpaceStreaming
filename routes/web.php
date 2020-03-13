@@ -14,3 +14,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'MainController@index');
+
+Route::get('/episode/{episode}', 'EpisodeController@show')->name('episode.show');

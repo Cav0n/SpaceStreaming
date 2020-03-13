@@ -8,10 +8,14 @@
     {{-- App CSS --}}
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
 
+    {{-- VideoJS CSS --}}
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.5.10/plyr.css" />
+
     <title>Space Streaming</title>
 </head>
 <body class="bg-dark text-light">
     <script src="{{asset('js/app.js')}}"></script>
+    <script src="https://cdn.plyr.io/3.5.10/plyr.polyfilled.js"></script>
 
     @include('components.header')
 

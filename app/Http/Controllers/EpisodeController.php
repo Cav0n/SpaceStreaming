@@ -46,7 +46,7 @@ class EpisodeController extends Controller
      */
     public function show(Episode $episode)
     {
-        //
+        return view('pages.episode')->with('episode', $episode);
     }
 
     /**

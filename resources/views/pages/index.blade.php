@@ -13,7 +13,8 @@
 
             <ul class="list-unstyled">
                 @foreach ($season->episodes as $episode)
-                <li><a>Episode {{ $episode->number }}</a></li>
+                <li><a href='{{ route('episode.show', ['episode' => $episode]) }}' class="text-light">
+                    Episode {{ $episode->number }}</a></li>
                 @endforeach
             </ul>
         </div>
