@@ -30,7 +30,15 @@
 
     </div>
 
-    <video class="w-100" src="{{ asset($episode->video->path) }}" type='video/x-matroska; codecs="theora, vorbis"' autoplay controls onerror="failed(event)" ></video>
+    <video
+    class="w-100"
+    src="{{ asset($episode->video->path) }}"
+    @if ("mkv" == substr($episode->video->path, -3))
+        type='video/x-matroska; codecs="theora, vorbis"'
+    @endif
+    autoplay
+    controls
+    onerror="failed(event)" ></video>
 </div>
 
 <script>
